@@ -10,7 +10,7 @@
     <Static>
       <Workspace>
         <ColumnWidths>
-          <Column0>439</Column0>
+          <Column0>525</Column0>
           <Column1>27</Column1>
           <Column2>27</Column2>
           <Column3>27</Column3>
@@ -24,7 +24,7 @@
       </Build>
     </Static>
     <Windows>
-      <Wnd0>
+      <Wnd2>
         <Tabs>
           <Tab>
             <Identity>TabID-29831-20569</Identity>
@@ -33,13 +33,18 @@
             <Session>
               <NodeDict>
                 <ExpandedNode>st334_dc_dc</ExpandedNode>
+                <ExpandedNode>st334_dc_dc/os</ExpandedNode>
+                <ExpandedNode>st334_dc_dc/os/apps</ExpandedNode>
+                <ExpandedNode>st334_dc_dc/os/cpu</ExpandedNode>
+                <ExpandedNode>st334_dc_dc/os/cpu/stm32f334</ExpandedNode>
+                <ExpandedNode>st334_dc_dc/xprintf</ExpandedNode>
               </NodeDict>
             </Session>
           </Tab>
         </Tabs>
         <SelectedTab>0</SelectedTab>
-      </Wnd0>
-      <Wnd1>
+      </Wnd2>
+      <Wnd3>
         <Tabs>
           <Tab>
             <Identity>TabID-9318-25252</Identity>
@@ -49,10 +54,144 @@
           </Tab>
         </Tabs>
         <SelectedTab>0</SelectedTab>
-      </Wnd1>
+      </Wnd3>
     </Windows>
     <Editor>
-      <Pane/>
+      <Pane>
+        <Tab>
+          <Factory>TextEditor</Factory>
+          <Filename>$WS_DIR$\..\utility\common.h</Filename>
+          <XPos>0</XPos>
+          <YPos>0</YPos>
+          <SelStart>0</SelStart>
+          <SelEnd>0</SelEnd>
+          <XPos2>0</XPos2>
+          <YPos2>0</YPos2>
+          <SelStart2>507</SelStart2>
+          <SelEnd2>507</SelEnd2>
+        </Tab>
+        <Tab>
+          <Factory>TextEditor</Factory>
+          <Filename>$WS_DIR$\..\utility\sysprintf.c</Filename>
+          <XPos>0</XPos>
+          <YPos>0</YPos>
+          <SelStart>0</SelStart>
+          <SelEnd>0</SelEnd>
+          <XPos2>0</XPos2>
+          <YPos2>15</YPos2>
+          <SelStart2>189</SelStart2>
+          <SelEnd2>189</SelEnd2>
+        </Tab>
+        <Tab>
+          <Factory>TextEditor</Factory>
+          <Filename>$WS_DIR$\..\utility\utility.c</Filename>
+          <XPos>0</XPos>
+          <YPos>0</YPos>
+          <SelStart>0</SelStart>
+          <SelEnd>0</SelEnd>
+          <XPos2>0</XPos2>
+          <YPos2>619</YPos2>
+          <SelStart2>8990</SelStart2>
+          <SelEnd2>8990</SelEnd2>
+        </Tab>
+        <Tab>
+          <Factory>TextEditor</Factory>
+          <Filename>$WS_DIR$\..\os\contiki\cpu\stm32f334\clock.c</Filename>
+          <XPos>0</XPos>
+          <YPos>0</YPos>
+          <SelStart>0</SelStart>
+          <SelEnd>0</SelEnd>
+          <XPos2>0</XPos2>
+          <YPos2>0</YPos2>
+          <SelStart2>0</SelStart2>
+          <SelEnd2>0</SelEnd2>
+        </Tab>
+        <Tab>
+          <Factory>TextEditor</Factory>
+          <Filename>$WS_DIR$\..\stm32f30x_it.c</Filename>
+          <XPos>0</XPos>
+          <YPos>0</YPos>
+          <SelStart>0</SelStart>
+          <SelEnd>0</SelEnd>
+          <XPos2>0</XPos2>
+          <YPos2>75</YPos2>
+          <SelStart2>0</SelStart2>
+          <SelEnd2>0</SelEnd2>
+        </Tab>
+        <Tab>
+          <Factory>TextEditor</Factory>
+          <Filename>$WS_DIR$\..\os\contiki\cpu\stm32f334\dbg_uart.h</Filename>
+          <XPos>0</XPos>
+          <YPos>0</YPos>
+          <SelStart>0</SelStart>
+          <SelEnd>0</SelEnd>
+          <XPos2>0</XPos2>
+          <YPos2>0</YPos2>
+          <SelStart2>0</SelStart2>
+          <SelEnd2>0</SelEnd2>
+        </Tab>
+        <Tab>
+          <Factory>TextEditor</Factory>
+          <Filename>$WS_DIR$\..\basictype.h</Filename>
+          <XPos>0</XPos>
+          <YPos>0</YPos>
+          <SelStart>0</SelStart>
+          <SelEnd>0</SelEnd>
+          <XPos2>0</XPos2>
+          <YPos2>0</YPos2>
+          <SelStart2>199</SelStart2>
+          <SelEnd2>199</SelEnd2>
+        </Tab>
+        <Tab>
+          <Factory>TextEditor</Factory>
+          <Filename>$WS_DIR$\..\os\contiki\cpu\stm32f334\dbg_uart.c</Filename>
+          <XPos>0</XPos>
+          <YPos>0</YPos>
+          <SelStart>0</SelStart>
+          <SelEnd>0</SelEnd>
+          <XPos2>0</XPos2>
+          <YPos2>10</YPos2>
+          <SelStart2>0</SelStart2>
+          <SelEnd2>0</SelEnd2>
+        </Tab>
+        <Tab>
+          <Factory>TextEditor</Factory>
+          <Filename>$WS_DIR$\..\main.c</Filename>
+          <XPos>0</XPos>
+          <YPos>0</YPos>
+          <SelStart>0</SelStart>
+          <SelEnd>0</SelEnd>
+          <XPos2>0</XPos2>
+          <YPos2>27</YPos2>
+          <SelStart2>0</SelStart2>
+          <SelEnd2>0</SelEnd2>
+        </Tab>
+        <Tab>
+          <Factory>TextEditor</Factory>
+          <Filename>$WS_DIR$\..\os\contiki\apps\serial-shell\serial-shell.c</Filename>
+          <XPos>0</XPos>
+          <YPos>0</YPos>
+          <SelStart>0</SelStart>
+          <SelEnd>0</SelEnd>
+          <XPos2>0</XPos2>
+          <YPos2>29</YPos2>
+          <SelStart2>1879</SelStart2>
+          <SelEnd2>1879</SelEnd2>
+        </Tab>
+        <Tab>
+          <Factory>TextEditor</Factory>
+          <Filename>$WS_DIR$\..\os\contiki\apps\shell\shell.c</Filename>
+          <XPos>0</XPos>
+          <YPos>0</YPos>
+          <SelStart>0</SelStart>
+          <SelEnd>0</SelEnd>
+          <XPos2>0</XPos2>
+          <YPos2>159</YPos2>
+          <SelStart2>5046</SelStart2>
+          <SelEnd2>5046</SelEnd2>
+        </Tab>
+        <ActiveTab>10</ActiveTab>
+      </Pane>
       <ActivePane>0</ActivePane>
       <Sizes>
         <Pane>
@@ -75,22 +214,22 @@
       <Left>
         <Row0>
           <Sizes>
-            <Wnd0>
+            <Wnd2>
               <Rect>
                 <Top>-2</Top>
                 <Left>-2</Left>
-                <Bottom>530</Bottom>
-                <Right>513</Right>
+                <Bottom>687</Bottom>
+                <Right>599</Right>
                 <x>-2</x>
                 <y>-2</y>
                 <xscreen>200</xscreen>
                 <yscreen>200</yscreen>
                 <sizeHorzCX>104167</sizeHorzCX>
                 <sizeHorzCY>200602</sizeHorzCY>
-                <sizeVertCX>268229</sizeVertCX>
-                <sizeVertCY>533601</sizeVertCY>
+                <sizeVertCX>313021</sizeVertCX>
+                <sizeVertCY>691073</sizeVertCY>
               </Rect>
-            </Wnd0>
+            </Wnd2>
           </Sizes>
         </Row0>
       </Left>
@@ -102,22 +241,22 @@
       <Bottom>
         <Row0>
           <Sizes>
-            <Wnd1>
+            <Wnd3>
               <Rect>
                 <Top>-2</Top>
                 <Left>-2</Left>
-                <Bottom>422</Bottom>
+                <Bottom>265</Bottom>
                 <Right>1922</Right>
                 <x>-2</x>
                 <y>-2</y>
                 <xscreen>1924</xscreen>
-                <yscreen>424</yscreen>
+                <yscreen>267</yscreen>
                 <sizeHorzCX>1002083</sizeHorzCX>
-                <sizeHorzCY>425276</sizeHorzCY>
+                <sizeHorzCY>267803</sizeHorzCY>
                 <sizeVertCX>104167</sizeVertCX>
                 <sizeVertCY>200602</sizeVertCY>
               </Rect>
-            </Wnd1>
+            </Wnd3>
           </Sizes>
         </Row0>
       </Bottom>

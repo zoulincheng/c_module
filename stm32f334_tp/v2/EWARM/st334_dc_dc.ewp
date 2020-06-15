@@ -302,6 +302,11 @@
           <state>$PROJ_DIR$\..\stlib\STM32F30x_StdPeriph_Driver\inc</state>
           <state>$PROJ_DIR$\..\stlib\CMSIS\Device\ST\STM32F30x\Include</state>
           <state>$PROJ_DIR$\..\stlib\CMSIS\Include</state>
+          <state>$PROJ_DIR$\..\utility</state>
+          <state>$PROJ_DIR$\..\xprintf</state>
+          <state>$PROJ_DIR$\..\os\contiki\core</state>
+          <state>$PROJ_DIR$\..\os\contiki\platform\stm32f334</state>
+          <state>$PROJ_DIR$\..\os\contiki\cpu\stm32f334</state>
         </option>
         <option>
           <name>CCStdIncCheck</name>
@@ -1885,6 +1890,93 @@
   </group>
   <group>
     <name>os</name>
+    <group>
+      <name>apps</name>
+      <file>
+        <name>$PROJ_DIR$\..\os\contiki\apps\serial-shell\serial-shell.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\os\contiki\apps\shell\shell.c</name>
+      </file>
+    </group>
+    <group>
+      <name>core</name>
+      <group>
+        <name>dev</name>
+        <file>
+          <name>$PROJ_DIR$\..\os\contiki\core\dev\serial-line.c</name>
+        </file>
+      </group>
+      <group>
+        <name>lib</name>
+        <file>
+          <name>$PROJ_DIR$\..\os\contiki\core\lib\crc16.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\os\contiki\core\lib\list.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\os\contiki\core\lib\memb.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\os\contiki\core\lib\mmem.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\os\contiki\core\lib\random.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\os\contiki\core\lib\ringbuf.c</name>
+        </file>
+      </group>
+      <group>
+        <name>sys</name>
+        <file>
+          <name>$PROJ_DIR$\..\os\contiki\core\sys\arg.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\os\contiki\core\sys\autostart.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\os\contiki\core\sys\ctimer.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\os\contiki\core\sys\etimer.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\os\contiki\core\sys\process.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\os\contiki\core\sys\procinit.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\os\contiki\core\sys\rtimer.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\os\contiki\core\sys\stimer.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\os\contiki\core\sys\timer.c</name>
+        </file>
+      </group>
+    </group>
+    <group>
+      <name>cpu</name>
+      <group>
+        <name>stm32f334</name>
+        <file>
+          <name>$PROJ_DIR$\..\os\contiki\cpu\stm32f334\clock.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\os\contiki\cpu\stm32f334\dbg_uart.c</name>
+        </file>
+      </group>
+    </group>
+    <group>
+      <name>platform</name>
+      <group>
+        <name>stm32f334</name>
+      </group>
+    </group>
   </group>
   <group>
     <name>startup</name>
@@ -1981,9 +2073,21 @@
   </group>
   <group>
     <name>utility</name>
+    <file>
+      <name>$PROJ_DIR$\..\utility\common.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\utility\sysprintf.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\utility\utility.c</name>
+    </file>
   </group>
   <group>
     <name>xprintf</name>
+    <file>
+      <name>$PROJ_DIR$\..\xprintf\xprintf.c</name>
+    </file>
   </group>
 </project>
 

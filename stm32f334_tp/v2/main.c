@@ -1,43 +1,58 @@
-/**
-  ******************************************************************************
-  * @file    main.c 
-  * @author  MCD Application Team
-  * @version V1.2.2
-  * @date    14-August-2015
-  * @brief   Main program body
-  ******************************************************************************
-  * @attention
-  *
-  * <h2><center>&copy; COPYRIGHT 2015 STMicroelectronics</center></h2>
-  *
-  * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
-  * You may not use this file except in compliance with the License.
-  * You may obtain a copy of the License at:
-  *
-  *        http://www.st.com/software_license_agreement_liberty_v2
-  *
-  * Unless required by applicable law or agreed to in writing, software 
-  * distributed under the License is distributed on an "AS IS" BASIS, 
-  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  * See the License for the specific language governing permissions and
-  * limitations under the License.
-  *
-  ******************************************************************************
-  */
-
-/* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "contiki.h"
+#include "dbg_uart.h"
+#include "sysprintf.h"
+#include "dev/serial-line.h"
 
-/** @addtogroup STM32F30x_StdPeriph_Templates
-  * @{
-  */
+PROCINIT(NULL);
+PROCESS(blink_led_process, "blink_led");
 
-/* Private typedef -----------------------------------------------------------*/
-/* Private define ------------------------------------------------------------*/
-/* Private macro -------------------------------------------------------------*/
-/* Private variables ---------------------------------------------------------*/
-/* Private function prototypes -----------------------------------------------*/
-/* Private functions ---------------------------------------------------------*/
+//const u_char *Data2 = (const u_char *)(0X1FFFF7BB);//����
+//const u_char *Data1 = (const u_char *)(0X1FFFF7BA);//
+
+PROCESS_THREAD(blink_led_process, ev, data)
+{
+	static struct etimer et_led;
+	//u_short data12, data21;
+	//u_short v;
+	PROCESS_BEGIN();
+	etimer_set(&et_led, 1000);
+	while(1)
+	{
+		PROCESS_YIELD_UNTIL(etimer_expired(&et_led));
+		//LED_SET(1);
+		LED_B_SET(1);
+		etimer_reset(&et_led);
+		PROCESS_YIELD_UNTIL(etimer_expired(&et_led));
+		//LED_SET(0);
+		LED_B_SET(0);
+		etimer_reset(&et_led);
+	}
+	PROCESS_END();
+}
+
+
+static void sys_init(void)
+{
+	//board_init( );
+	clock_init( );
+	dbg_uart_init( );
+	xdev_out(dbg_uart_send_byte);
+	uart_handler_set(1,serial_line_input_byte);
+
+	process_init( );
+	process_start(&etimer_process, NULL);
+	ctimer_init( );
+
+	serial_line_init( );//For shell
+	serial_shell_init( );
+	shell_init( );
+
+	//watch dog init
+	//watch_dog_init( );
+	//ctimer_set(&ctWatch, 200, feedWatchdog, NULL);
+}
+
 
 /**
   * @brief  Main program.
@@ -46,20 +61,15 @@
   */
 int main(void)
 {
-  /*!< At this stage the microcontroller clock setting is already configured, 
-       this is done through SystemInit() function which is called from startup
-       file (startup_stm32f30x.s) before to branch to application main.
-       To reconfigure the default setting of SystemInit() function, refer to
-       system_stm32f30x.c file
-     */ 
- 
-  /* Add your application code here
-     */
-
-  /* Infinite loop */
-  while (1)
-  {
-  }
+	clock_init( );
+	/* Infinite loop */
+	xprintf("system run-------------------\r\n");
+	while (1)
+	{
+		do 
+		{
+		} while(process_run() > 0);	
+	}
 }
 
 

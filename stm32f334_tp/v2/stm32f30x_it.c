@@ -138,9 +138,11 @@ void PendSV_Handler(void)
   * @param  None
   * @retval None
   */
+  /*
 void SysTick_Handler(void)
 {
 }
+*/
 
 /******************************************************************************/
 /*                 STM32F30x Peripherals Interrupt Handlers                   */

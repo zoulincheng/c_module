@@ -482,7 +482,7 @@ float Bcd2Float(char *szBuf,u_char*pBCD,int nFmt)
 {
 	// 12345678
 	float fResult = 0.0;
-	char fmt[16];
+	//char fmt[16];
 	char szaBuf[16];
 	//char *szaBuf = szBuf ? szBuf : szaBuf;
 	if(pBCD[0] != 0xEE && pBCD[0] != 0xFF)
