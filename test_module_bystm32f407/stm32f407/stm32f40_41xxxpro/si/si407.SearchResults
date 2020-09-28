@@ -1,0 +1,5 @@
+---- tlsf_size() Matches (5 in 2 files) ----
+apptest_tlsf.c (apptest)://#define _TLSF_EXTERN_SIZE()	 (tlsf_size()+tlsf_pool_overhead()+tlsf_alloc_overhead())
+tlsf.c (tlsf):    tlsf_add_pool(tlsf, (char *)mem + tlsf_size(), bytes - tlsf_size());
+tlsf.c (tlsf):    xprintf("mem = %08x, tlsf_size()=%d, bytes=%d, bytes-tlsf_size=%d\r\n", mem, tlsf_size( ), bytes, bytes-tlsf_size( ));
+tlsf.c (tlsf):    return tlsf_cast(pool_t, (char *)tlsf + tlsf_size());

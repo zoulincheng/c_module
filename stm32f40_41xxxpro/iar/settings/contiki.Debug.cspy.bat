@@ -19,6 +19,6 @@
 @REM 
 
 
-"F:\iar_710\common\bin\cspybat" "F:\iar_710\arm\bin\armproc.dll" "F:\iar_710\arm\bin\armsim2.dll"  %1 --plugin "F:\iar_710\arm\bin\armbat.dll" --device_macro "F:\iar_710\arm\config\debugger\ST\Trace_STM32F4xx.dmac" --backend -B "--endian=little" "--cpu=Cortex-M4F" "--fpu=VFPv4" "-p" "F:\iar_710\arm\CONFIG\debugger\ST\STM32F407VE.ddf" "--semihosting" "--device=STM32F407VE" "--multicore_nr_of_cores=1" 
+"E:\iar\common\bin\cspybat" "E:\iar\arm\bin\armproc.dll" "E:\iar\arm\bin\armsim2.dll"  %1 --plugin "E:\iar\arm\bin\armbat.dll" --device_macro "E:\iar\arm\config\debugger\ST\Trace_STM32F4xx.dmac" --backend -B "--endian=little" "--cpu=Cortex-M4F" "--fpu=VFPv4" "-p" "E:\iar\arm\CONFIG\debugger\ST\STM32F407VE.ddf" "--semihosting" "--device=STM32F407VE" "--multicore_nr_of_cores=1" 
 
 
